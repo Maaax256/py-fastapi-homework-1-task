@@ -6,7 +6,7 @@ from fastapi_pagination.bases import AbstractParams, RawParams, AbstractPage
 from fastapi_pagination.customization import CustomizedPage, UseFieldsAliases
 from pydantic import BaseModel, Field
 
-from schemas import MovieDetailResponseSchema
+from src.schemas import MovieDetailResponseSchema
 
 T = TypeVar("T")
 

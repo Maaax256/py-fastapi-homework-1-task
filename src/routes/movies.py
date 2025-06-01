@@ -38,4 +38,4 @@ async def get_movie_by_id(
     if not movie:
         raise HTTPException(status_code=404, detail="Movie with the given ID was not found.")
 
-    return movie
+    return MovieDetailResponseSchema.model_validate(movie)
